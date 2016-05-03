@@ -4,6 +4,14 @@ declare var module;
 
 import {ManifestWriter, SourceResolver} from './generator';
 
+
+declare class Promise<T> {
+  constructor(fn: Function);
+  static all<T>(promises: Promise<T>[]): Promise<T[]>;
+  static resolve<T>(val: T): Promise<T>;
+  then<V>(fn: (T) => V | Promise<V>): Promise<V>;
+}
+
 const fse           = require('fs-extra');
 const path          = require('path');
 const BroccoliPlugin:BroccoliPluginConstructor        = require('broccoli-caching-writer');;
