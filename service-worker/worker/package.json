@@ -38,6 +38,7 @@
     "ts-node": "^0.5.5",
     "tsd": "^0.6.5",
     "typescript": "^1.8.9",
+    "vinyl": "^1.1.1",
     "zone.js": "^0.6.5"
   },
   "dependencies": {
